@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.quiz-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+}
+
+.quiz-container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.btn {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #f64f59, #c471ed, #12c2e9);
+    transform: translateY(-5px);
+}
+
+#result-container {
+    margin-top: 20px;
+    display: none;
+}
+
+#result {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #56ab2f, #a8e063);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#next-btn, #restart-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    padding: 15px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#next-btn:hover, #restart-btn:hover {
+    background: linear-gradient(135deg, #ee0979, #ff6a00);
+    transform: translateY(-5px);
+}
+
+.correct {
+    background: linear-gradient(135deg, #56ab2f, #a8e063) !important;
+}
+
+.wrong {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b) !important;
+}
